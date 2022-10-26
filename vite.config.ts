@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { normalizePath } from 'vite'
 import path from 'path'
+import viteEslint from 'vite-plugin-eslint'
+import StylelintPlugin from 'vite-plugin-stylelint'
 
 // 全局 scss 文件的路径, 用 normalizePath 解决 window 下的路径问题
 const variablePath = normalizePath(path.resolve('./src/variable.scss'))
@@ -10,6 +12,8 @@ const variablePath = normalizePath(path.resolve('./src/variable.scss'))
 export default defineConfig({
   plugins: [
     react(),
+    viteEslint(),
+    StylelintPlugin(),
     // {
     //   babel: {
     //     // 加入 babel 插件支持 CSS In JS 方案: styled-components和emotion
