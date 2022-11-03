@@ -2,3 +2,8 @@
   color: $theme-color;
   text-decoration: dashed;
 }
+
+.bg {
+  height: 30vh;
+  background: url('@assets/imgs/bg.jpg') no-repeat;
+}

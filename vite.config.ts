@@ -10,6 +10,12 @@ const variablePath = normalizePath(path.resolve('./src/variable.scss'))
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    // 别名配置
+    alias: {
+      '@assets': path.join(__dirname, 'src/assets'),
+    },
+  },
   plugins: [
     react(),
     viteEslint(),
