@@ -9,6 +9,7 @@
   "printWidth": 120,
   "proseWrap": "never",
   "quoteProps": "as-needed",
+  "endOfLine": "auto",
   "requirePragma": false,
   "semi": false,
   "singleQuote": true,
